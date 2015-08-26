@@ -1,0 +1,20 @@
+■JavaScript課題
+1.divタグにCSS(margin,padding,border,height,width,background等)を適用して色々なボタンとかボックスをつくる。
+ポイントはボックスを横並びにする時はCSSにfloat:leftを設定すること
+ボックスを改行するときは<div style=clear:both;></div>を書くこと。
+
+2.入力のテキストボックスを多数つくって、各inputにidを設定する。
+ボタンを押した時にフォームに入力した値が別のフォームに転記される処理をjavascriptで実装する。
+処理方法としては以下のようなDOMで転記を行う。。
+document.getElementById("aaa").value=document.getElementByID("bbb").value
+（id="bbb"のテキストボックスの値をid="aaa"のテキストボックスに転記）
+
+3.DOMを利用し、ボタンを押すことでCSSの内容の変更やHTMLの追記を行う。
+例）
+document.getElementById("aaa").style.スタイル要素=　～（スタイルシート変更）
+document.getElementById("aaa").innerHTML=　～（動的にhtmlの内容を入れ替え）
+
+4.if、elseを使ってDOMで取得してきた値に対して文字の入力チェックを行う。
+例えば、文字が入力されてなかったらalertを呼出す。入力OKなら確認画面を表示する。
+
+5.ダイアルパッド（電話番号を取得するところまで）、電卓をつくる
